@@ -1,0 +1,64 @@
+.navbar-default, .navbar-nav .active a, .navbar-default a {
+  background-color: #000000 !important;
+  color: #FFFFFF !important;
+}
+
+#logo {
+  float:left;
+  font-size: 1.7em;
+  color: #FFFFFF;
+  text-transform: capitalize;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+#logo:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.jumbotron {
+  background-image: url('Seamless-Carbon-Fiber.jpg');
+  background-size: 150px 150px;
+  height: 550px;
+}
+
+.jumbotron h1 {
+    color: #FFFFFF;
+    font-weight: bold;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-shadow: 3px 3px 3px #454545;
+}
+
+.btn-xlrg {
+  background-color: #898989;
+  border-color: #898989;
+  font-size: 1.7em;
+}
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #EAEAEA;
+  color: #777777;
+  width: 100%;
+}
+
+footer a:hover {
+  color: #222222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
