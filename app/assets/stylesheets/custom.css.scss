@@ -24,6 +24,7 @@
 .jumbotron {
   background-image: asset-url('Seamless-Carbon-Fiber.jpg');
   background-size: 150px 150px;
+  box-shadow: 3px 3px 3px #CDCDCD;
   height: 550px;
 }
 
@@ -37,15 +38,15 @@
 }
 
 .btn-xlrg {
-  background-color: #898989;
-  border-color: #898989;
+  background-color: rgba(0,0,0,0.7);
+  border-color:  rgba(0,0,0,0.7);
   font-size: 1.7em;
 }
 
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid #EAEAEA;
+  border-top: 1px solid #CDCDCD;
   color: #777777;
   width: 100%;
 }
