@@ -62,4 +62,17 @@ footer small {
 footer ul {
   float: right;
   list-style: none;
+  overflow: hidden;
+}
+
+footer ul li {
+  display: inline;
+  font-size: 85%;
+  margin-left: 6px;
+  margin-right: -11px;
+}
+
+footer ul li:after {
+  content: "|";
+  padding: 0 .5em;
 }
