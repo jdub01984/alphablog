@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20160622210015) do
+=======
+ActiveRecord::Schema.define(version: 20160619180440) do
+>>>>>>> parent of f2832ba... Create users table and model
 
   create_table "articles", force: :cascade do |t|
     t.string   "title"
@@ -19,13 +23,6 @@ ActiveRecord::Schema.define(version: 20160622210015) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
-  end
-
-  create_table "users", force: :cascade do |t|
-    t.string   "username"
-    t.string   "email"
-    t.datetime "created_at"
-    t.datetime "updated_at"
   end
 
 end
