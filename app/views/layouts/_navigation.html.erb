@@ -30,13 +30,20 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form>-->
       <ul class="nav navbar-nav navbar-right">
+        <% if session[:user_id] == nil %>
+        <li><%= link_to "Sign Up", signup_path %></li>
+        <li><%= link_to "Login", login_path %></li>
+        <% end %>
+        <% if session[:user_id] != nil %>
+        <% user = User.find(session[:user_id]) %>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User Actions <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= user.username %> <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><%= link_to "View All Users", users_path %></li>
-            <li><%= link_to "Sign Up", signup_path %></li>
-            <li><%= link_to "Update User Account", "#" %></li>
+            <li><%= link_to "View Your Articles", user_path(user.id) %></li>
+            <li><%= link_to "Logout", logout_path, method: :delete %></li>
           </ul>
+        <% end %>
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->
