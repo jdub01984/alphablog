@@ -14,16 +14,20 @@
       </div>
     </ul>
   </div>
-  <hr>
-  <%= simple_format(@article.description) %>
-  <div class="article-meta-details">
-    <small>Created by: <%= link_to "#{@article.user.username}", user_path(@article.user.id) %>, <%= time_ago_in_words(@article.created_at) %> ago, last updated: <%= time_ago_in_words(@article.updated_at) %> ago</small>
+  <div class="col-xs-12" align="left">
+    <hr>
+    <%= simple_format(@article.description) %>
+    <div class="article-meta-details">
+      <small>Created by: <%= link_to "#{@article.user.username}", user_path(@article.user.id) %>, <%= time_ago_in_words(@article.created_at) %> ago, last updated: <%= time_ago_in_words(@article.updated_at) %> ago</small>
+    </div>
   </div>
-  <div class="article-actions">
-    <%= link_to "Edit this article", edit_article_path(@article), class: "btn btn-xs btn-primary" %>
-    <%= link_to "Delete this article", article_path(@article), method: :delete, 
-                  data: {confirm: "Are you sure you want to delete the artice?"}, 
-                  class: "btn btn-xs btn-danger" %>
-    <%= link_to "View all articles", articles_path, class: "btn btn-xs btn-success" %>
+  <div class="col-xs-10 col-xs-offset-2">
+    <div class="article-actions">
+      <%= link_to "Edit this article", edit_article_path(@article), class: "btn btn-xs btn-primary" %>
+      <%= link_to "Delete this article", article_path(@article), method: :delete, 
+                    data: {confirm: "Are you sure you want to delete the artice?"}, 
+                    class: "btn btn-xs btn-danger" %>
+      <%= link_to "View all articles", articles_path, class: "btn btn-xs btn-success" %>
+    </div>
   </div>
 </div>
