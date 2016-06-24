@@ -45,8 +45,9 @@
 }
 
 .btn-xlrg {
-  background-color: rgba(255,255,255,0.3);
-  border-color:  rgba(255,255,255,0.0);
+  background-color: rgba(174, 86, 94, 0.6);
+  border-color:  rgba(174, 86, 94, 0.0);
+  box-shadow: 3px 3px 3px #232323;
   font-size: 1.7em;
 }
 
@@ -109,4 +110,9 @@ footer ul li {
 .listing {
   list-style: none;
   padding-left: 0;
+}
+
+.noaccess {
+  background-color: #F2DEDE;
+  color: #A94442;
 }
