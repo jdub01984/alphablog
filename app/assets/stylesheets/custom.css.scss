@@ -4,12 +4,12 @@
 }
 
 #logo {
+  color: #FFFFFF;
   float:left;
   font-size: 1.7em;
-  color: #FFFFFF;
+  font-weight: bold;
   text-transform: capitalize;
   letter-spacing: -1px;
-  font-weight: bold;
 }
 
 #logo:hover {
@@ -52,10 +52,10 @@
 }
 
 footer {
-  margin-top: 45px;
-  padding-top: 5px;
   border-top: 1px solid #CDCDCD;
   color: #777777;
+  margin-top: 45px;
+  padding-top: 5px;
   width: 100%;
 }
 
@@ -83,14 +83,15 @@ footer ul li {
 
 .article-meta-details {
   border-top: 1px solid #EAEAEA;
-  margin-top: 15px;
+  margin-bottom: 3px;
+  margin-top: 3px;
   text-align: right;
 }
 
 .article-actions {
   border-top: 1px solid #EAEAEA;
-  text-align: right;
   padding-top: 5px;
+  text-align: right;
 }
 
 .description {
@@ -112,6 +113,28 @@ footer ul li {
   padding-left: 0;
 }
 
+.badge {
+  background-color: #343434;
+  border-radius: 4px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  margin-right: 5px;
+  text-transform: uppercase;
+}
+
+.badge a {
+  color: #FFFFFF;
+}
+
+.input_checkbox {
+  width: auto !important;
+}
+
+
+.checkbox {
+  margin-bottom: 3px;
+  
+}
 .noaccess {
   background-color: #F2DEDE;
   color: #A94442;
@@ -132,3 +155,4 @@ footer ul li {
   box-shadow: 3px 3px 3px #343434;
   color: #CDCDCD !important;
 }
+
